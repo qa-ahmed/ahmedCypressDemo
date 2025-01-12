@@ -18,6 +18,7 @@
   "homepage": "https://github.com/qa-ahmed/ahmedCypressDemo#readme",
   "devDependencies": {
     "cypress": "^13.17.0",
+    "cypress-iframe": "^1.0.1",
     "typescript": "^5.7.3"
   }
 }

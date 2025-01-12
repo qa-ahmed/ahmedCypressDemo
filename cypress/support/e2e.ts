@@ -1,3 +1,5 @@
+//place index.ts items here
+
 // ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
@@ -15,3 +17,20 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      /**
+       * Custom command to select iFrame.
+       * @example cy.getIFrame('frame')
+       */
+      getIframe(iframe: string): any;
+      /**
+       * Custom command to get links by linktext
+       * @example cy.byLinkText('linktext')
+       */
+      byLinkText(linktext: string): Chainable<Element>;
+    }
+  }
+}
