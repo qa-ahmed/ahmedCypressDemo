@@ -21,13 +21,12 @@ describe('Homepage Test Suite', () => {
           failOnStatusCode: false,
           timeout: 50000
         }).then(response => {
-          if (response.status >= 400) {
+          expect(response.status).to.not.eq(404);
             Cypress.log({
-              name: 'Broken link',
+              name: 'Link is Active',
               message: `${page} returned status ${response.status}`
             });
-          }
-        })
+          });
       }
     });
   });
