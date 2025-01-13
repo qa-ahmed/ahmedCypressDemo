@@ -1,7 +1,4 @@
 //Link to FakeStoreAPI https://github.com/keikaavousi/fake-store-api
-
-import { data } from "cypress/types/jquery";
-import { eq } from "cypress/types/lodash";
 let userToken;
 
 describe('FakeStoreAPI Test Suite', () => {
