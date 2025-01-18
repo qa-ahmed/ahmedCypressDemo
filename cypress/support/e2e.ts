@@ -16,8 +16,11 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+
+/// <reference types="cypress-downloadfile"/>
 import './commands'
 import 'cypress-mochawesome-reporter/register';
+require('cypress-downloadfile/lib/downloadFileCommand')
 
 declare global {
   namespace Cypress {
@@ -32,6 +35,13 @@ declare global {
        * @example cy.byLinkText('linktext')
        */
       byLinkText(linktext: string): Chainable<Element>;
+      /**
+       * Custom command to get headers and data rows aliased as 'headers' and 'dataRows'
+       * @example cy.readCSV(filePath)
+       */
+      readCSV(filePath: string): any;
+      deleteFiles(path: string): any;
+      getDownloadedFileName(path: string): any;
     }
   }
 }
