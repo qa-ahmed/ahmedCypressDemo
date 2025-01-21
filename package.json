@@ -1,0 +1,30 @@
+{
+  "name": "ahmedcypressdemo",
+  "version": "1.0.0",
+  "description": "Demonstrate Cypress Skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qa-ahmed/ahmedCypressDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qa-ahmed/ahmedCypressDemo/issues"
+  },
+  "homepage": "https://github.com/qa-ahmed/ahmedCypressDemo#readme",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cypress-iframe": "^1.0.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "neat-csv": "^7.0.0",
+    "papaparse": "^5.5.1"
+  }
+}

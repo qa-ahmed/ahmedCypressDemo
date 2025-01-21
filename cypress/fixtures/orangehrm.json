@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "username": "Admin",
+            "password": "admin123",
+            "expected": "PIM"
+        },
+
+        {
+            "username": "Admin",
+            "password": "admin",
+            "expected": ""
+        }
+    ]
+}
